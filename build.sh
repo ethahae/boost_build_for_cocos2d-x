@@ -474,7 +474,7 @@ buildIncludes()
 
 mkdir -p $IOSBUILDDIR
 
-#cleanEverythingReadyToStart #may want to comment if repeatedly running during dev
+cleanEverythingReadyToStart #may want to comment if repeatedly running during dev
 get_ndk
 restoreBoost
 
@@ -493,7 +493,7 @@ echo "ANDROID_COMPILER"  $ANDROID_COMPILER
 echo
 
 downloadBoost
-#unpackBoost
+unpackBoost
 inventMissingHeaders
 prepare
 bootstrapBoost
@@ -504,7 +504,7 @@ buildIncludes
 
 restoreBoost
 
-#postcleanEverything
+postcleanEverything
 
 echo "Completed successfully"
 
